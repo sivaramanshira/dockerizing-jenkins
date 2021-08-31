@@ -2,10 +2,10 @@
 
 #clean anything with same name to get rid of clashes
 docker-compose down
-docker-compose -f docker-compose-elk.yml down
+docker-compose -f docker-compose.yml down
 
 #run elk stack
-docker-compose -f docker-compose-elk.yml up &
+docker-compose -f docker-compose.yml up &
 
 sleep 20
 
